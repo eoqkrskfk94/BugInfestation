@@ -21,14 +21,14 @@ public class BugInfestation {
 	double newbugs = 0, newbugvol = 0;
 	int countweek = 0;
 
-	void set(double a, double b) //this method sets the inserted value to the variables in this class
+	void Set(double a, double b) //this method sets the inserted value to the variables in this class
 	{
 		housevol = a;
 		startpop = b;
 		totalbugvol = b * ONE_BUG_VOLUME;
 	}
 	
-	void newinfo() //This method calculates the given variables
+	void Calculatenewinfo() //This method calculates the given variables
 	{
 		newbugs = startpop * GROWTH_RATE;
 		newbugvol = newbugs * ONE_BUG_VOLUME;
