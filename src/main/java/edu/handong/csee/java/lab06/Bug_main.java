@@ -14,7 +14,7 @@ public class Bug_main {
 		// TODO Auto-generated method stub
 		
 		double house_vol; //declares variables that are to be used
-		double pop;
+		double pop; //declares variables that are to be used
 		
 		BugInfestation bug = new BugInfestation(); //calls out the class BugInfestation in order to use the methods in that class
 		
@@ -26,11 +26,11 @@ public class Bug_main {
 		System.out.print("Enter estimated number of roaches in your house: "); 
 		pop = input.nextDouble(); //inserts entered value to the variable
 		
-		bug.set(house_vol, pop);
+		bug.Set(house_vol, pop);
 		
 		while(bug.totalbugvol < bug.housevol) //repeats the loop until totalbugvol is greater than housevol
 		{
-			bug.newinfo(); //Calls out newinfo method in BugInfestation class
+			bug.Calculatenewinfo(); //Calls out newinfo method in BugInfestation class
 		}
 		
 		
