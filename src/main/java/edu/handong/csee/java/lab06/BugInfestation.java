@@ -10,7 +10,7 @@ package edu.handong.csee.java.lab06; //Package
  *
  */
 public class BugInfestation { //declaring BugInfestation class
-	
+
 	static double GROWTH_RATE = 0.95; //Making a static value where GROWTH_RATE has a value of 0.95
 	static double ONE_BUG_VOLUME = 0.002; //Making a static value where ONE_BUG_VOLUME has a value of 0.002
 	double housevol; //Declare housevol double variable
@@ -25,7 +25,7 @@ public class BugInfestation { //declaring BugInfestation class
 		startpop = b; //Insert the value b into startpop
 		totalbugvol = b * ONE_BUG_VOLUME; //insert the value b*0.002 into totalbugvol
 	}
-	
+
 	void Calculatenewinfo() //This method calculates the given variables
 	{
 		newbugs = startpop * GROWTH_RATE; //calculates newbugs
@@ -34,9 +34,9 @@ public class BugInfestation { //declaring BugInfestation class
 		totalbugvol = totalbugvol + newbugvol; //calculates totalbugvol
 		countweek = countweek + 1; //week value in increased by 1
 	}
-	
-	
-	
+
+
+
 }
 
 
